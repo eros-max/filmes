@@ -7,13 +7,26 @@ Content-Type: application/json
 
 {
 
-    "title": "Auraless Monster",
-    "genre": "Aurudos",
-    "duration": 67,
-    "ageRating": "67"
+    "title": "De Volta para o Futuro",
+    "genre": "Ficção Científica",
+    "duration": 111,
+    "ageRating": "12"
 
 }
 
 ###
 
-DELETE http://localhost:3333/deleteMovies/2
+DELETE http://localhost:3333/deleteMovies/3
+
+###
+
+PATCH http://localhost:3333/changeMovies/3
+Content-Type: application/json
+
+{
+    "title": "ar",
+    "genre": "Audos",
+    "duration": 69,
+    "ageRating": "64"
+
+}

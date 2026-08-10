@@ -56,6 +56,37 @@ app.delete("/deleteMovies/:id", (req, res) =>{
 
 //ALTERAR
 
+/*
+
+app.patch("/changeMovies/:id", async (req,res) =>{
+    const { id } = req.params
+
+    const selectCommand = "SELECT * FROM filmes_ErosMax WHERE id = ?"
+
+    const movie = await database.promise().query(selectCommand, [id], (error, data) => {
+        if (error) {
+            console.log(error)
+        } else {
+            return data
+        }
+
+    const changeCommand = "UPDATE filmes_ErosMax SET title = ?, genre = ?, duration = ?, ageRating = ? WHERE id = ?"
+
+    database.query(changeCommand, [id], (error) => {
+        if (error) {
+            console.log(error)
+        } else {
+            res.json({
+                message: "Tarefa alterada com success!"
+            })
+        }
+        
+        })
+    })
+})
+
+*/
+
 const database = mysql2.createPool({
     host: "benserverplex.ddns.net",
     user: "alunos",
