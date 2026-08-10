@@ -1,3 +1,19 @@
 GET http://localhost:3333/showMovies
 
 ###
+
+POST http://localhost:3333/addMovies
+Content-Type: application/json
+
+{
+
+    "title": "Auraless Monster",
+    "genre": "Aurudos",
+    "duration": 67,
+    "ageRating": "67"
+
+}
+
+###
+
+DELETE http://localhost:3333/deleteMovies/2
