@@ -7,10 +7,10 @@ Content-Type: application/json
 
 {
 
-    "title": "De Volta para o Futuro",
-    "genre": "Ficção Científica",
-    "duration": 111,
-    "ageRating": "12"
+    "title": "O Silêncio dos Inocentes",
+    "genre": "Suspense",
+    "duration": 118,
+    "ageRating": "14"
 
 }
 
@@ -20,13 +20,13 @@ DELETE http://localhost:3333/deleteMovies/3
 
 ###
 
-PATCH http://localhost:3333/changeMovies/3
+PUT http://localhost:3333/changeMovies/1
 Content-Type: application/json
 
 {
-    "title": "ar",
-    "genre": "Audos",
-    "duration": 69,
-    "ageRating": "64"
+    "title": "O Enigma de Outro Mundo",
+    "genre": "Ficção Científica",
+    "duration": 110,
+    "ageRating": "14"
 
 }
