@@ -1,12 +1,15 @@
 import express from "express"
 import mysql2 from "mysql2"
+import cors from "cors"
 
 const app = express()
+
+app.use(cors())
 app.use(express.json())
 
 //EXIBIR
 
-app.get("/showMovies", (req, res) => {
+app.get("/", (req, res) => {
     const showCommand = "SELECT * FROM filmes_ErosMax"
 
     database.query(showCommand, (error,data) => {
