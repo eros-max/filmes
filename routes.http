@@ -2,7 +2,7 @@ GET http://localhost:3333/
 
 ###
 
-POST http://localhost:3333/addMovies
+POST https://filmesfrontend-eight.vercel.app/addMovies
 Content-Type: application/json
 
 {

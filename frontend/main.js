@@ -8,12 +8,23 @@ async function getMovies() {
         sectionMovies.innerHTML += `
             <div>
                 <h2>${movie.title}</h2>
-                <p><strong>Gênero:</strong> ${movie.gender}</p>
+                <p><strong>Gênero:</strong> ${movie.genre}</p>
                 <p><strong>Duração:</strong> ${movie.duration} minutos</p>
                 <p><strong>Classificação indicativa:</strong> ${movie.ageRating}</p>
+
+                <button onclick="apagarFilme(${filme.id})">Apagar</button>
             </div>
         `
     })
+}
+
+async function apagarFilme(id) {
+    const resposta = await fetch(`https://filmesfrontend-eight.vercel.app/deleteMovies/${id}`, { method: "DELETE" })
+    const respostaJS = await resposta.json()
+
+    alert(respostaJS.message)
+
+    window.location.reload()
 }
 
 getMovies()
