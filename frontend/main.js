@@ -19,7 +19,7 @@ async function getMovies() {
 }
 
 async function apagarFilme(id) {
-    const resposta = await fetch(`https://filmesfrontend-eight.vercel.app/deleteMovies/${id}`, { method: "DELETE" })
+    const resposta = await fetch(`https://filmes-seven-inky.vercel.app/deleteMovies/${id}`, { method: "DELETE" })
     const respostaJS = await resposta.json()
 
     alert(respostaJS.message)

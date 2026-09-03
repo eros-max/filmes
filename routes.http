@@ -7,10 +7,10 @@ Content-Type: application/json
 
 {
 
-    "title": "O Silêncio dos Inocentes",
-    "genre": "Suspense",
-    "duration": 118,
-    "ageRating": "14"
+    "title": "Jurassic Park",
+    "genre": "Ficção Científica",
+    "duration": 90,
+    "ageRating": "16"
 
 }
 
